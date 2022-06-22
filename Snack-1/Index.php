@@ -6,35 +6,41 @@ Olimpia Milano - Cantù | 55-60 -->
     $partite= [
         [
             'SquadraDiCasa' => 'Olimpia Milano',
-            'SquadraOspire' => 'Virtus Bologna',
+            'SquadraOspite' => 'Virtus Bologna',
             'puntiCasa' => 78,
             'puntiOspite' => 84,
         ],
         [
             'SquadraDiCasa' => 'Derthona',
-            'SquadraOspire' => 'Venezia',
+            'SquadraOspite' => 'Venezia',
             'puntiCasa' => 63,
             'puntiOspite' => 73,
         ],
         [
             'SquadraDiCasa' => 'Dinamo Sassari',
-            'SquadraOspire' => 'Brescia',
+            'SquadraOspite' => 'Brescia',
             'puntiCasa' => 98,
             'puntiOspite' => 68,
         ],
         [
             'SquadraDiCasa' => 'Trieste',
-            'SquadraOspire' => 'Brindisi',
+            'SquadraOspite' => 'Brindisi',
             'puntiCasa' => 66,
             'puntiOspite' => 77,
         ],
         [
             'SquadraDiCasa' => 'Reggiana',
-            'SquadraOspire' => 'VL Pesaro',
+            'SquadraOspite' => 'VL Pesaro',
             'puntiCasa' => 59,
             'puntiOspite' => 55,
         ],
     ];
 
-    var_dump ($partite);
+    for($i = 0; $i < count($partite); $i++) {
+        echo $partite[$i]['SquadraDiCasa'] . " - ". $partite[$i]['SquadraOspite']. " | ". $partite[$i]['puntiCasa']. "-". $partite[$i]['puntiOspite'] ;
+    }
+
+
+
+
 ?>
